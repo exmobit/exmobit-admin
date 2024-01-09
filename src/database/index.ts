@@ -2,13 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCbRu5dtazuzzW9kLUXdA5Gd9_SyaVt6Vc',
-  authDomain: 'crypto-9f12c.firebaseapp.com',
-  databaseURL: 'https://crypto-9f12c-default-rtdb.firebaseio.com',
-  projectId: 'crypto-9f12c',
-  storageBucket: 'crypto-9f12c.appspot.com',
-  messagingSenderId: '428435514719',
-  appId: '1:428435514719:web:067239b06f450d1ed142ea',
+  apiKey: "AIzaSyBsS092LFI7UhkugRP0EGw_9sQk43B7o7Y",
+  authDomain: "exmobit.firebaseapp.com",
+  projectId: "exmobit",
+  storageBucket: "exmobit.appspot.com",
+  messagingSenderId: "1085654646079",
+  appId: "1:1085654646079:web:bc7c7b7fe172fcc2d6e78a"
 };
 
 const app = initializeApp(firebaseConfig);
