@@ -8,7 +8,8 @@ const MainPage = () => {
     name: string,
     inBTC: string,
     code: string,
-    id: string
+    id: string,
+    toWallet?:string
   }[]>([])
 
   const [transactions, setTransactions] = useState<{
@@ -24,7 +25,7 @@ const MainPage = () => {
     status: string;
     send: string | undefined;
     receive: string | undefined;
-    wallet: string;
+    wallet?: string;
     email: string;
     id: string
   }[]>([])
@@ -54,6 +55,7 @@ const MainPage = () => {
       name: "BTC",
       inBTC: "1",
       code: "BTC",
+      toWallet:"0"
     }
     db.setData('currencies', newData).then((id) => {
       const newCurrencies = [...currencies];

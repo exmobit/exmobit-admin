@@ -11,10 +11,10 @@ type Transaction = {
   status: string;
   send: string | undefined;
   receive: string | undefined;
-  wallet: string;
+  wallet?: string;
   email: string;
   id: string;
-  toWallet: string;
+  toWallet?: string;
 };
 
 interface ITransactionsTable {

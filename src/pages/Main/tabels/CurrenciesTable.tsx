@@ -7,8 +7,9 @@ type Currency = {
   name: string;
   code: string;
   inBTC: string;
-  wallet: string;
+  wallet?: string;
   id: string;
+  toWallet?:string;
 };
 
 interface TableState extends Currency {
@@ -38,7 +39,7 @@ const CurrenciesTable = (props: ICurrenciesTable) => {
           name: newTableState[i].name,
           code: newTableState[i].code,
           inBTC: newTableState[i].inBTC,
-		  wallet: newTableState[i].wallet
+		      wallet: newTableState[i].wallet
         },
         "currencies",
         newTableState[i].id
